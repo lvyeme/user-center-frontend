@@ -1,6 +1,6 @@
 import { GithubOutlined } from '@ant-design/icons';
 import { DefaultFooter } from '@ant-design/pro-components';
-import {UNIVERSE_LINK} from "@/constant";
+import {GITHUB, UNIVERSE_LINK} from "@/constant";
 const Footer: React.FC = () => {
   const defaultMessage = 'Lvye';
   const currentYear = new Date().getFullYear();
@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
         {
           key: 'github',
           title: <><GithubOutlined />Lvye Github</>,
-          href: 'https://github.com/lvyeme',
+          href: GITHUB,
           blankTarget: true,
         },
         {
