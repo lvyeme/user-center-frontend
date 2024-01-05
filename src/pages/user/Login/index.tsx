@@ -19,6 +19,8 @@ import { Alert, message, Tabs } from 'antd';
 import React, { useState } from 'react';
 import { history, useModel } from 'umi';
 import styles from './index.less';
+import {SYSTEM_LOGO, UNIVERSE_LINK} from "@/constant";
+
 const LoginMessage: React.FC<{
   content: string;
 }> = ({ content }) => (
@@ -77,9 +79,9 @@ const Login: React.FC = () => {
     <div className={styles.container}>
       <div className={styles.content}>
         <LoginForm
-          logo={<img alt="logo" src="/logo.svg" />}
-          title="Ant Design"
-          subTitle={'Ant Design 是西湖区最具影响力的 Web 设计规范'}
+          logo={<img alt="logo" src={SYSTEM_LOGO} />}
+          title="Cosmic Galactic "
+          subTitle={<a href={UNIVERSE_LINK} target="_blank" rel="noreferrer"> The Bast Of The Universe</a>}
           initialValues={{
             autoLogin: true,
           }}
