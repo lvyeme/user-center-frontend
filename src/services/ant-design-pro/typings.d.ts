@@ -28,6 +28,7 @@ declare namespace API {
     type?: string;
     currentAuthority?: string;
   };
+  type RegisterResult = number;
 
   type PageParams = {
     current?: number;
@@ -49,6 +50,16 @@ declare namespace API {
     progress?: number;
   };
 
+  /**
+   * 通用返回类
+   */
+  type BaseResponse<T> = {
+    code: number,
+    data: T,
+    message: string,
+    description: string,
+  }
+
   type RuleList = {
     data?: RuleListItem[];
     /** 列表的内容总数 */
@@ -67,7 +78,12 @@ declare namespace API {
     autoLogin?: boolean;
     type?: string;
   };
-
+  type RegisterParams = {
+    userAccount?: string;
+    userPassword?: string;
+    checkPassword?: string;
+    type?: string;
+  };
   type ErrorResponse = {
     /** 业务约定的错误码 */
     errorCode: string;
