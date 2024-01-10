@@ -14,8 +14,10 @@
     name: '管理页',
     icon: 'crown',
     access: 'canAdmin',
+    component: './Admin',
     routes: [
-      { path: '/admin/sub-page', name: '二级管理页', icon: 'smile', component: './Welcome' },
+      { path: '/admin/user-manage', name: '用户管理', icon: 'smile', component: './Admin/UserManage' },
+      { path: '/admin/amd', name: '用户管理2', icon: 'smile', component: './Admin/amd' },
       { component: './404' },
     ],
   },
