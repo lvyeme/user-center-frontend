@@ -15,6 +15,7 @@ import {history, Link, useModel} from 'umi';
 import styles from './index.less';
 import {GITHUB, SYSTEM_LOGO, UNIVERSE_LINK} from "@/constant";
 
+
 const LoginMessage: React.FC<{
   content: string;
 }> = ({ content }) => (

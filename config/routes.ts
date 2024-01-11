@@ -17,7 +17,9 @@
     component: './Admin',
     routes: [
       { path: '/admin/user-manage', name: '用户管理', icon: 'smile', component: './Admin/UserManage' },
+/*
       { path: '/admin/amd', name: '用户管理2', icon: 'smile', component: './Admin/amd' },
+*/
       { component: './404' },
     ],
   },
