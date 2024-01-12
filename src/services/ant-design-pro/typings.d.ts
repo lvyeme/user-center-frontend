@@ -10,6 +10,7 @@ declare namespace API {
     gender:number;
     phone: string;
     email: string;
+    planetCode: string;
     userStatus: number;
     userRole: number;
 /*
@@ -77,6 +78,7 @@ declare namespace API {
     userAccount?: string;
     userPassword?: string;
     checkPassword?: string;
+    planetCode?: string;
     type?: string;
   };
   type ErrorResponse = {
