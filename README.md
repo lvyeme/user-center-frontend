@@ -4,6 +4,9 @@ This project is initialized with [Ant Design Pro](https://pro.ant.design). Follo
 
 ## Environment Prepare
 
+# cmd方式启动: cd进入项目存放目录 1.使用命令 set NODE_OPTIONS=--openssl-legacy-provider
+# 2.yarn start
+
 Install `node_modules`:
 
 ```bash
